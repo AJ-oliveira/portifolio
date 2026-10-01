@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adelcino L. de Oliveira Jr. | Analista de Sistemas & Desenvolvedor Backend</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased pb-20 md:pb-0">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-slate-900/90 backdrop-blur border-b border-slate-800 z-50">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="font-bold text-lg tracking-tight text-white">Adelcino<span class="text-brand-500">.dev</span></span>
+            <a href="https://wa.me/5517999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." 
+               target="_blank" 
+               class="bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition shadow-lg shadow-brand-500/20 flex items-center gap-2">
+                <i class="fab font-bold fa-whatsapp text-lg"></i>
+                <span class="hidden sm:inline">Falar no WhatsApp</span>
+                <span class="sm:hidden">Contato</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Apresentação Pessoal) -->
+    <section class="pt-28 pb-12 md:pt-36 md:pb-20 px-4 max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <!-- Foto de Perfil -->
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-brand-500 to-cyan-500 rounded-full blur opacity-40 group-hover:opacity-75 transition duration-300"></div>
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" 
+                     alt="Adelcino L. de Oliveira Junior" 
+                     class="relative w-40 h-40 md:w-52 md:h-52 rounded-full object-cover border-2 border-slate-700 shadow-2xl">
+            </div>
+            <!-- Apresentação -->
+            <div class="text-center md:text-left flex-1">
+                <div class="inline-block px-3 py-1 bg-brand-500/10 border border-brand-500/20 text-brand-500 rounded-full text-xs font-semibold mb-3">
+                    Analista de Sistemas & Backend Specialist
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
+                    Soluções em Sistemas, Banco de Dados e Integrações
+                </h1>
+                <p class="text-slate-400 text-base md:text-lg mb-6 leading-relaxed">
+                    Ajudo empresas e profissionais a otimizarem seus processos, integrarem sistemas, organizarem bancos de dados e desenvolverem soluções sob medida para o seu negócio.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#agendamento" class="bg-brand-500 hover:bg-brand-600 text-white font-medium px-6 py-3 rounded-lg transition shadow-lg shadow-brand-500/25 flex items-center gap-2">
+                        <i class="far fa-calendar-check"></i> Agendar Consulta
+                    </a>
+                    <a href="#servicos" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium px-6 py-3 rounded-lg transition">
+                        Ver Serviços
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas / Diferenciais -->
+    <section class="py-8 bg-slate-800/50 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <div class="text-2xl md:text-3xl font-bold text-white mb-1">+20 Anos</div>
+                <div class="text-xs md:text-sm text-slate-400">De Experiência em TI</div>
+            </div>
+            <div>
+                <div class="text-2xl md:text-3xl font-bold text-white mb-1">PL/SQL & Java</div>
+                <div class="text-xs md:text-sm text-slate-400">Desenvolvimento Backend</div>
+            </div>
+            <div>
+                <div class="text-2xl md:text-3xl font-bold text-white mb-1">MBA USP</div>
+                <div class="text-xs md:text-sm text-slate-400">Engenharia de Software</div>
+            </div>
+            <div>
+                <div class="text-2xl md:text-3xl font-bold text-white mb-1">100% On-line</div>
+                <div class="text-xs md:text-sm text-slate-400">Atendimento Remoto</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Oferecidos -->
+    <section id="servicos" class="py-16 px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Serviços & Soluções</h2>
+            <p class="text-slate-400 text-sm md:text-base max-w-xl mx-auto">Desenvolvimento e consultoria técnica focada em estabilidade, desempenho e automação.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700 hover:border-brand-500/50 transition">
+                <div class="w-12 h-12 bg-brand-500/10 text-brand-500 rounded-lg flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Bancos de Dados & PL/SQL</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Otimização de consultas (Queries), automações em PL/SQL, modelagem de dados, rotinas de integração e migração.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700 hover:border-brand-500/50 transition">
+                <div class="w-12 h-12 bg-brand-500/10 text-brand-500 rounded-lg flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Desenvolvimento Backend</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Criação de APIs, manutenção e evolução de sistemas existentes, regras de negócio estruturadas e integração com IA.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700 hover:border-brand-500/50 transition">
+                <div class="w-12 h-12 bg-brand-500/10 text-brand-500 rounded-lg flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Automação de Processos</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Integração de planilhas, geração automática de relatórios/documentos em PDF e automação de fluxos de trabalho (n8n/Webhooks).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que ofereço VS O que NÃO ofereço (Escopo Transparente) -->
+    <section class="py-16 px-4 bg-slate-800/30 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Transparência no Atendimento</h2>
+                <p class="text-slate-400 text-sm md:text-base">Para garantir a melhor experiência e alinhar expectativas desde o primeiro contato.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- O que ofereço -->
+                <div class="bg-slate-800/90 p-6 rounded-xl border border-emerald-500/30">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-check-circle text-emerald-400 text-2xl"></i>
+                        <h3 class="text-lg font-bold text-white">O que eu ofereço</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-emerald-400 mt-1"></i> Análise detalhada do problema antes da proposta de solução.</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-emerald-400 mt-1"></i> Desenvolvimento com foco em performance, organização e segurança.</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-emerald-400 mt-1"></i> Prazos realistas e acompanhamento do progresso do projeto.</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-emerald-400 mt-1"></i> Documentação clara do que foi implementado.</li>
+                    </ul>
+                </div>
+
+                <!-- O que NÃO ofereço -->
+                <div class="bg-slate-800/90 p-6 rounded-xl border border-rose-500/30">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-times-circle text-rose-400 text-2xl"></i>
+                        <h3 class="text-lg font-bold text-white">O que eu NÃO ofereço</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                        <li class="flex items-start gap-2"><i class="fas fa-times text-rose-400 mt-1"></i> Suporte ou manutenção em hardware/computadores físicos.</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-times text-rose-400 mt-1"></i> Formatação de PC ou instalação de softwares piratas/crackeados.</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-times text-rose-400 mt-1"></i> Projetos de urgência sem planejamento ou alinhamento prévio.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valores & Horários -->
+    <section class="py-16 px-4 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Horários -->
+            <div class="bg-slate-800/60 p-6 rounded-xl border border-slate-700">
+                <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                    <i class="far fa-clock text-brand-500"></i> Horários de Atendimento
+                </h3>
+                <div class="space-y-3 text-sm text-slate-300">
+                    <div class="flex justify-between py-2 border-b border-slate-700/50">
+                        <span>Segunda a Sexta-feira:</span>
+                        <span class="font-semibold text-white">08:00 às 18:00</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-slate-700/50">
+                        <span>Sábados (Apenas agendamentos):</span>
+                        <span class="font-semibold text-white">09:00 às 12:00</span>
+                    </div>
+                    <div class="flex justify-between py-2">
+                        <span>Domingos e Feriados:</span>
+                        <span class="text-slate-500">Fechado</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Valores / Orçamentos -->
+            <div class="bg-slate-800/60 p-6 rounded-xl border border-slate-700">
+                <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                    <i class="fas fa-tag text-brand-500"></i> Investimento & Orçamentos
+                </h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                    Os valores são calculados com base no escopo e complexidade de cada demanda. Trabalhos sob orçamento fechado ou hora de consultoria.
+                </p>
+                <div class="p-4 bg-slate-900/60 rounded-lg border border-slate-700/50">
+                    <span class="text-xs text-slate-400 block mb-1">Consultoria Inicial / Diagnóstico:</span>
+                    <span class="text-lg font-bold text-brand-500">A partir de R$ 150,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário / Contato / Agendamento -->
+    <section id="agendamento" class="py-16 px-4 bg-slate-800/40 border-t border-slate-800">
+        <div class="max-w-xl mx-auto bg-slate-800 p-8 rounded-2xl border border-slate-700 shadow-xl">
+            <div class="text-center mb-6">
+                <h2 class="text-2xl font-bold text-white mb-2">Solicitar Orçamento / Agendamento</h2>
+                <p class="text-slate-400 text-sm">Preencha os campos abaixo para iniciar seu atendimento via WhatsApp.</p>
+            </div>
+
+            <form id="contactForm" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Seu Nome</label>
+                    <input type="text" id="nome" required placeholder="Digite seu nome completo" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Serviço de Interesse</label>
+                    <select id="servico" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-brand-500 text-sm">
+                        <option value="Banco de Dados / PL-SQL">Banco de Dados / PL-SQL</option>
+                        <option value="Desenvolvimento Backend">Desenvolvimento Backend</option>
+                        <option value="Automação e Relatórios">Automação de Processos</option>
+                        <option value="Outros Assuntos">Outro Assunto</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Resumo da sua necessidade</label>
+                    <textarea id="mensagem" rows="3" required placeholder="Conte brevemente o que precisa..." class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-lg transition shadow-lg shadow-emerald-600/20 flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp text-xl"></i> Enviar Mensagem via WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-slate-500 text-xs border-t border-slate-800">
+        <p>© 2026 Adelcino L. de Oliveira Junior. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp (Apenas Mobile) -->
+    <div class="fixed bottom-4 right-4 z-50 md:hidden">
+        <a href="https://wa.me/5517999999999?text=Olá!%20Vim%20pelo%20seu%20site." target="_blank" class="w-14 h-14 bg-emerald-500 text-white rounded-full flex items-center justify-center text-2xl shadow-2xl shadow-emerald-500/50 active:scale-95 transition">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Script de Integração com WhatsApp -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nome = document.getElementById('nome').value;
+            const servico = document.getElementById('servico').value;
+            const mensagem = document.getElementById('mensagem').value;
+            
+            // INSIRA SEU NÚMERO COM DDD ABAIXO (ex: 5517999999999)
+            const numeroWhatsapp = "5517999999999";
+            
+            const textoFormatado = `Olá! Meu nome é *${nome}*.\nTenho interesse em: *${servico}*.\n\n*Detalhes:* ${mensagem}`;
+            const url = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(textoFormatado)}`;
+            
+            window.open(url, '_blank');
+        });
+    </script>
+</body>
+</html>
